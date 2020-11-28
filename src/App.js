@@ -1,23 +1,39 @@
 import logo from './logo.svg';
 import './App.css';
+import RegistrationForm from './container/RegistrationForm';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="wrapper">
+        <div className="content-wrapper" style={{marginLeft:"0px"}}>
+          <section className="content" style={{paddingTop:"20px"}}>
+            <div className="container-fluid">
+            <div className="row">
+            <section className="col-lg-12 connectedSortable">
+                <div className="card">
+                <div className="card-header">
+                    <h3 className="card-title">
+                    <i className="fas fa-chart-pie mr-1"></i>
+                    User Onboard
+                    </h3>
+                    <div className="card-tools">
+                    </div>
+                </div>
+                <div className="card-body">
+                    <div className="tab-content p-0">
+                      <div className="card ">
+                        <RegistrationForm />
+                      </div>
+                    </div>
+                </div>
+                </div>
+                </section>
+                </div>
+            </div>
+        </section>
+        
+        </div>
+        
     </div>
   );
 }
